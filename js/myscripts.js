@@ -40,7 +40,7 @@ $(document).ready(function(){
         // if a coin is already in the cart then update only quantity
         if (coinQuantity === 0) {
             itemQuantities[btnIndex] += 1;
-            $(".dropdown-content").append("<li><table><tr>" +
+            $(".dropdown-menu span").append("<li><table><tr>" +
                 "<td><img class='coin' src='" + coinImg + "'></td>" +
                 "<td>" + coinName + "</td>" +
                 "<td id='"+btnIndex+"'>" + itemQuantities[btnIndex] + "x</td>" +

@@ -1,0 +1,105 @@
+
+.dropdown-menu img {
+    width: 50px;
+    height: auto;
+    vertical-align: middle;
+}
+
+
+.total {
+    text-align: right;
+    font-size: 1.2em !important;
+    font-weight: bolder !important;
+    color: #7b0c00;
+    padding: 15px;
+}
+
+
+.dropdown-menu li {
+    font-family: Arial, sans-serif;
+    font-size: 12px;
+    font-weight: normal;
+    vertical-align: middle;
+    width: 100%;
+    white-space: nowrap;
+    /*overflow: auto;*/
+}
+
+
+/* item in a cart */
+.dropdown-menu table {
+    border-collapse: collapse;
+    vertical-align: middle;
+    table-layout: fixed;
+    width: 500px;
+    padding: 0;
+}
+
+
+.dropdown-menu table td {
+    margin-top: 0;
+    margin-bottom: 0;
+    padding: 10px;
+}
+
+td .coin {
+    float: left;
+}
+
+
+/* coin image */
+.dropdown-menu table td:nth-child(1) {
+    vertical-align: middle;
+    width: 70px;
+}
+
+
+/* coin name */
+.dropdown-menu table td:nth-child(2) {
+    text-align: left;
+    vertical-align: middle;
+    width: 250px;
+    text-wrap: normal;
+    word-wrap: break-word;
+    padding: 0 5px;
+}
+
+
+/* coin quantity */
+.dropdown-menu table td:nth-child(3) {
+    text-align: right;
+    vertical-align: middle;
+    width: 60px;
+    padding-left: 10px;
+    font-weight: bold;
+}
+
+
+/* coin price */
+.dropdown-menu table td:nth-child(4) {
+    text-align: right;
+    vertical-align: middle;
+    width: 80px;
+    padding-right: 10px;
+}
+
+
+
+
+
+
+
+
+/* Change color of dropdown links on hover */
+.dropdown-menu table:hover { background-color: #ffe0b7; }
+
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-menu {
+    display: block;
+}
+
+/* Changes the background color of the drop-down button when the drop-down content is shown */
+.dropdown:hover .dropbtn {
+    background-color: #ffe0b7;
+}
