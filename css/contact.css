@@ -1,0 +1,16 @@
+.panel {
+    /*border: 1px solid red;*/
+}
+
+
+.contact {
+    /*border: 2px solid green;*/
+    background-color: white;
+    vertical-align: top;
+    margin: 3%;
+    padding: 3%;
+}
+
+iframe, .panel {
+    margin: 0;
+}
