@@ -1,0 +1,29 @@
+.about {
+    background-color: white;
+    margin: 3%;
+    padding: 3%;
+    text-align: left;
+}
+
+
+.about img {
+    margin-bottom: 2%;
+    margin-right: 3.5%;
+    float: left;
+}
+
+
+h2 {
+    font-weight: bolder;
+    color: #7b0c00;
+    margin: 0 0 20px 0;
+}
+
+
+@media only screen and (max-width: 1050px) {
+    .about img {
+        height: 200px;
+        width: auto;
+    }
+}
+
