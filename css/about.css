@@ -13,6 +13,12 @@
 }
 
 
+.about p:first-letter {
+    font-size: 150%;
+    color: #7b0c00;
+}
+
+
 h2 {
     font-weight: bolder;
     color: #7b0c00;
