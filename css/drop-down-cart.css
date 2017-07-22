@@ -20,6 +20,7 @@
     font-size: 12px;
     font-weight: normal;
     vertical-align: middle;
+    min-width: 550px;
     width: 100%;
     white-space: nowrap;
     /*overflow: auto;*/
@@ -31,7 +32,7 @@
     border-collapse: collapse;
     vertical-align: middle;
     table-layout: fixed;
-    width: 500px;
+    min-width: 550px;
     padding: 0;
 }
 
