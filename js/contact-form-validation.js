@@ -7,6 +7,12 @@ function onFormSuccess(e) {
 
 
 $(document).ready(function() {
+
+    $("button").click(function(e){
+        $('#contact-us-all').formValidation('resetForm', true);
+    });
+
+
     $('#contact-us-all').formValidation({
         framework: 'bootstrap',
         err: {
