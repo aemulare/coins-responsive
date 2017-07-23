@@ -1,6 +1,4 @@
-.panel {
-    /*border: 1px solid red;*/
-}
+
 
 
 .contact {
@@ -8,9 +6,33 @@
     background-color: white;
     vertical-align: top;
     margin: 3%;
-    padding: 3%;
+    padding: 1.5% 3% 3% 3%;
 }
 
+
+
 iframe, .panel {
-    margin: 0;
+    margin-bottom: 10px;
 }
+
+
+#title {
+    font-weight: bolder;
+    color: #7b0c00;
+}
+
+
+#contact-info {
+    color: #7b0c00;
+}
+
+
+textarea {
+    resize: none;
+}
+
+
+.panel-body {
+    padding: 0;
+}
+
