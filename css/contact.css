@@ -36,3 +36,7 @@ textarea {
     padding: 0;
 }
 
+
+.input-group {
+    z-index: 0;
+}

@@ -1,8 +1,8 @@
-// function onFormSuccess(e) {
-//     // $('#contact-us-all').formValidation('resetField', 'firstName', true);
-//     $('#contact-us-all').formValidation('resetForm', true);
-//     $('#modal').modal().open();
-// }
+function onFormSuccess(e) {
+    // $('#contact-us-all').formValidation('resetField', 'firstName', true);
+    $('#contact-us-all').formValidation('resetForm', true);
+    $('#modal').modal().open();
+}
 
 
 
