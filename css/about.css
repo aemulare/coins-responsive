@@ -19,6 +19,11 @@
 }
 
 
+p {
+    text-indent: 30px;
+}
+
+
 h2 {
     font-weight: bolder;
     color: #7b0c00;
