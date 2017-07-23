@@ -1,3 +1,9 @@
+function onFormSuccess(e) {
+    // $('#modal').modal().open();
+
+}
+
+
 $(document).ready(function() {
     $('#contact-us-all').formValidation({
         framework: 'bootstrap',
