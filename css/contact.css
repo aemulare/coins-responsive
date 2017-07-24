@@ -1,15 +1,15 @@
-
-
-
 .contact {
-    /*border: 2px solid green;*/
     background-color: white;
-    vertical-align: top;
-    margin: 3%;
-    padding: 1.5% 3% 3% 3%;
+    text-align: center;
+    /*border: 1px solid magenta;*/
+    padding: 1.5em;
 }
 
 
+.container {
+    background-color: rgba(255, 255, 255, 0.7);
+    padding: 2%;
+}
 
 iframe, .panel {
     margin-bottom: 10px;
@@ -23,6 +23,8 @@ iframe, .panel {
 
 
 #contact-info {
+    font-family: 'Yantramanav', sans-serif;
+    font-size: 1.1em;
     color: #7b0c00;
 }
 

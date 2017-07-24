@@ -1,15 +1,18 @@
-.about {
-    background-color: white;
-    margin: 3%;
-    padding: 3%;
-    text-align: justify;
-}
 
 
 .about img {
     margin-bottom: 2%;
     margin-right: 3.5%;
     float: left;
+}
+
+
+.title {
+    color: #7b0c00;
+    font-family: 'Yantramanav', sans-serif;
+    font-size: 2em;
+    font-weight: bold;
+    margin: 0.5em 0;
 }
 
 
@@ -24,17 +27,18 @@ p {
 }
 
 
-h2 {
-    font-weight: bolder;
-    color: #7b0c00;
-    margin: 0 0 20px 0;
+article {
+    font-family: 'Yantramanav', sans-serif;
+    font-size: 1.1em;
+    background-color: white;
+    padding: 1.5em;
+    text-align: justify;
+    margin-bottom: 3%;
+    /*border: 1px solid darkblue;*/
 }
 
-
-@media only screen and (max-width: 1050px) {
-    .about img {
-        height: 200px;
-        width: auto;
-    }
+.container-fluid {
+    height: 100%;
 }
+
 

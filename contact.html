@@ -13,26 +13,36 @@
     <!-- Latest compiled JavaScript -->
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 
-    <!-- font awesome -->
+    <!-- Font awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
-    <!-- flip library -->
+    <!-- Flip library -->
     <script src="https://cdn.rawgit.com/nnattawat/flip/master/dist/jquery.flip.min.js"></script>
 
-    <!-- jquery modal library -->
+    <!-- jQuery modal library -->
     <script src="js/jquery.modal.min.js" type="text/javascript" charset="utf-8"></script>
-
-    <!-- main style for common elements (header, footer, navigation) -->
-    <link rel="stylesheet" type="text/css" href="css/main.css">
-
-    <!-- 'contact' page style -->
-    <link rel="stylesheet" type="text/css" href="css/contact.css">
-
-    <!-- modal style -->
     <link rel="stylesheet" href="css/jquery.modal.css" type="text/css" media="screen" />
 
     <!-- drop-down cart content style -->
     <link rel="stylesheet" href="css/drop-down-cart.css" type="text/css" />
+
+    <!-- contact page content style -->
+    <link rel="stylesheet" href="css/contact.css" type="text/css" />
+
+    <!-- main content style -->
+    <link rel="stylesheet" href="css/styles.css" type="text/css" />
+
+    <!--<script src="js/myscripts.js"></script>-->
+
+    <!-- Handwriting font for quotes-->
+    <link href="https://fonts.googleapis.com/css?family=Bad+Script" rel="stylesheet">
+
+    <!-- Font for the main content -->
+    <link href="https://fonts.googleapis.com/css?family=Yantramanav" rel="stylesheet">
+
+    <!-- Font for the site brand name -->
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:700" rel="stylesheet">
+
 
     <!-- FormValidation CSS file -->
     <link rel="stylesheet" href="css/formValidation.min.css">
@@ -44,16 +54,22 @@
     <script src="js/contact-form-validation.js"></script>
 
 
-    <title>Contact | Collectible World Coins</title>
+    <title>Collectible World Coins</title>
 </head>
 <body>
-<header>
-    <div class="brand">
-        Collectible World Coins
-    </div>
-</header>
+<!--<div class="bg">-->
+<div class="container-fluid bg">
 
-<div class="bg">
+    <!-- HEADER / SITE NAME-->
+    <div class="row">
+        <header>
+            <div class="brand">
+                Collectible World Coins
+            </div>
+        </header>
+    </div><!-- end HEADER / SITE NAME row -->
+
+    <!-- NAVIGATION MENU -->
     <div class="row">
         <!-- Navigation menu -->
         <nav class="navbar navbar-default">
@@ -64,16 +80,15 @@
                         <span class="icon-bar"></span>
                         <span class="icon-bar"></span>
                     </button>
-                    <!--<a class="navbar-brand" href="#">Collectible World Coins</a>-->
                 </div>
                 <div class="collapse navbar-collapse" id="myNavbar">
                     <ul class="nav navbar-nav">
-                        <li class="active"><a href="home.html">Home</a></li>
+                        <li class="active"><a href="index.html">Home</a></li>
                         <li><a href="about.html">About</a></li>
                         <li><a href="contact.html">Contact</a></li>
-                        <li><a href="index.html">Collection</a></li>
+                        <li><a href="collection.html">Collection</a></li>
                         <!--<li class="dropdown">-->
-                        <!--<a class="dropdown-toggle" data-toggle="dropdown" href="index.html">Collections<span class="caret"></span></a>-->
+                        <!--<a class="dropdown-toggle" data-toggle="dropdown" href="collection.html">Collections<span class="caret"></span></a>-->
                         <!--<ul class="dropdown-menu">-->
                         <!--<li><a href="#">Gold</a></li>-->
                         <!--<li><a href="#">Silver</a></li>-->
@@ -91,10 +106,6 @@
                             <span>
 
                             </span>
-                                <!--<li><a href="#">Gold</a></li>-->
-                                <!--<li><a href="#">Silver</a></li>-->
-                                <!--<li><a href="#">Platinum</a></li>-->
-                                <!--<li><a href="#">Other metals</a></li>-->
                                 <li class="divider"></li>
                                 <li class="total">Total&nbsp;&nbsp;$<span id="total">0.00</span></li>
                             </ul>
@@ -103,12 +114,12 @@
                 </div>
             </div>
         </nav> <!-- End navigation menu -->
-    </div><!-- End row -->
+    </div><!-- end NAVIGATION MENU row -->
 
-    <!-- Main content container -->
-    <div class="container-fluid content">
-        <div class="row row-centered content-row">
-            <div class="container contact col-xs-10 col-sm-8 col-md-10 col-lg-10 col-centered">
+    <!-- PAGE CONTENT -->
+    <div class="row">
+        <div class="container content">
+            <div class="contact">
                 <div class="row">
                     <h2 class="col-lg-12" id="title">Contact</h2>
                     <div id="contact-info">
@@ -150,7 +161,7 @@
                                                 </div>
                                                 <input type="text" class="form-control" id="exampleInputFirstName" placeholder="First name" name="firstName" data-bv-field="firstName">
                                             </div>
-                                            </div>
+                                        </div>
                                         <div class="col-sm-6">
                                             <div class="input-group">
                                                 <div class="input-group-addon">
@@ -171,12 +182,12 @@
                                             <small data-bv-validator="notEmpty" data-bv-validator-for="emailAddress" class="help-block" style="display: none;">Required</small></div>
 
                                         <!--<div class="col-sm-6">-->
-                                            <!--<div class="input-group">-->
-                                                <!--<div class="input-group-addon">-->
-                                                    <!--<i class="fa fa-briefcase"></i>-->
-                                                <!--</div>-->
-                                                <!--<input type="text" class="form-control" id="exampleInputCompany" placeholder="Enter company" name="C_Company">-->
-                                            <!--</div>-->
+                                        <!--<div class="input-group">-->
+                                        <!--<div class="input-group-addon">-->
+                                        <!--<i class="fa fa-briefcase"></i>-->
+                                        <!--</div>-->
+                                        <!--<input type="text" class="form-control" id="exampleInputCompany" placeholder="Enter company" name="C_Company">-->
+                                        <!--</div>-->
                                         <!--</div>-->
                                     </div>
 
@@ -548,18 +559,22 @@
                     </div><!-- end col-md-6 -->
                 </div>
             </div>
-        </div> <!-- End row -->
-    </div> <!-- End container-fluid -->
-</div> <!-- End bg -->
+        </div><!-- End container-fluid -->
+    </div><!-- end PAGE CONTENT row -->
+
+    <!-- FOOTER -->
+    <div class="row b">
+        <div class="footer">
+            <footer>
+                Copyright <i class="fa fa-copyright" aria-hidden="true"></i> 2017 Maria Romanova
+            </footer>
+        </div>
+    </div><!-- end FOOTER row -->
+</div><!-- end container-fluid -->
 
 <!-- Modal HTML embedded directly into document -->
 <div id="modal" style="display:none;">
     <p>Thank you! We will get back to you with a reply as soon as possible.<br><a href="#" rel="modal:close">Close</a> or press ESC</p>
-</div>
-<div class="footer">
-    <footer>
-        Copyright <i class="fa fa-copyright" aria-hidden="true"></i> 2017 Maria Romanova
-    </footer>
 </div>
 </body>
 </html>

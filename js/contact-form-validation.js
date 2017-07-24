@@ -7,8 +7,7 @@ function onFormSuccess(e) {
 
 
 $(document).ready(function() {
-
-    $("button").click(function(e){
+    $("#contacts-cancel").click(function(e){
         $('#contact-us-all').formValidation('resetForm', true);
     });
 
