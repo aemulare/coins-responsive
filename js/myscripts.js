@@ -4,7 +4,7 @@ $(document).ready(function(){
     // flip coin on 'click'
     $(".card-grid").flip({
         trigger: 'click',
-        speed: 700
+        speed: 500
     });
 
 
