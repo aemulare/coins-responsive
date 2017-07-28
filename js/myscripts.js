@@ -14,9 +14,10 @@ $(document).ready(function(){
 
     var theTotal = 0;
     var coinQuantity = 0;
-    var idClicked, currentPrice, parentCard, coinName, parentCardId, btnIndex;
+    var idClicked, parentCard, coinName, parentCardId, btnIndex;
     var itemQuantities = new Array(1000).fill(0);
     var cart = [];
+    var coin = {};
 
 
     function isInCart(coin) {
@@ -78,8 +79,6 @@ $(document).ready(function(){
         coinQuantity = itemQuantities[btnIndex];
 
         parentCard = $(this).parents().eq(2);
-        // alert(parentCard.prop("tagName") + " class: " + parentCard.prop("className") + ", id = " + parentCard.prop("id"));
-
         parentCardId = "#" + parentCard.prop("id");
 
         coinName = $(parentCardId).find("span").eq(0).text();
@@ -87,7 +86,7 @@ $(document).ready(function(){
         coinImg = $(parentCardId).find("img").eq(0).attr("src");
 
         // create coin object
-        var coin = {
+        coin = {
             "id":parentCard.prop('id'),
             "Name":coinName,
             "Description":coinDescription,
@@ -129,10 +128,6 @@ $(document).ready(function(){
         '<h5>$<span id="price">'+ numberWithCommas(coinPrice) +'</span></h5>');
 
         $(".modal-body").html('<img class="coin" src="'+ coinImg +'">');
-
-
-        // var msg = "1 item has been added to your cart:\n\n\t" + coinName + "\n\t" + coinDescription + "\n\n\t$" + numberWithCommas(coinPrice);
-        // alert(msg);
 
         e.preventDefault();
 
