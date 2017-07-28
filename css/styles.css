@@ -187,3 +187,20 @@ article {
 }
 
 
+
+
+
+/* login modal */
+#login-username,
+#login-password {
+    width: 300px;
+}
+
+
+a#view-cart {
+    color: white;
+    display: block;
+    margin: auto auto;
+    text-align: center;
+    width: 150px;
+}

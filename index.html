@@ -50,7 +50,7 @@
         <div class="container-fluid bg">
 
             <!-- HEADER / SITE NAME-->
-            <div class="row">
+            <div class="row" id="header">
                 <header>
                     <div class="brand">
                         Collectible World Coins
@@ -59,7 +59,7 @@
             </div><!-- end HEADER / SITE NAME row -->
 
             <!-- NAVIGATION MENU -->
-            <div class="row">
+            <div class="row" id="navigation">
                 <!-- Navigation menu -->
                 <nav class="navbar navbar-default">
                     <div class="container-fluid">
@@ -75,16 +75,7 @@
                                 <li class="active"><a href="index.html">Home</a></li>
                                 <li><a href="about.html">About</a></li>
                                 <li><a href="contact.html">Contact</a></li>
-                                <li><a href="collection2.html">Collection</a></li>
-                                <!--<li class="dropdown">-->
-                                <!--<a class="dropdown-toggle" data-toggle="dropdown" href="collection.html">Collections<span class="caret"></span></a>-->
-                                <!--<ul class="dropdown-menu">-->
-                                <!--<li><a href="#">Gold</a></li>-->
-                                <!--<li><a href="#">Silver</a></li>-->
-                                <!--<li><a href="#">Platinum</a></li>-->
-                                <!--<li><a href="#">Other metals</a></li>-->
-                                <!--</ul>-->
-                                <!--</li>-->
+                                <li><a href="collection.html">Collection</a></li>
                             </ul>
                             <ul class="nav navbar-nav navbar-right">
                                 <li><a href="#"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
@@ -92,11 +83,17 @@
                                 <li class="dropdown">
                                     <a class="dropdown-toggle" data-toggle="dropdown" href="#">Cart<span class="caret"></span></a>
                                     <ul class="dropdown-menu">
-                            <span>
+                            <span id="cart-content">
 
                             </span>
                                         <li class="divider"></li>
                                         <li class="total">Total&nbsp;&nbsp;$<span id="total">0.00</span></li>
+                                        <li class="view-cart">
+                                            <div class="btn-group">
+                                                <button type="button" id="view" class="btn btn-default btn-primary">View</button>
+                                                <button type="button" id="clear-cart" class="btn tn-default btn-primary">Clear</button>
+                                            </div>
+                                        </li>
                                     </ul>
                                 </li>
                             </ul>
@@ -166,7 +163,7 @@
             </div><!-- end PAGE CONTENT row -->
 
             <!-- FOOTER -->
-            <div class="row b">
+            <div class="row" id="footer">
                 <div class="footer">
                     <footer>
                         Copyright <i class="fa fa-copyright" aria-hidden="true"></i> 2017 Maria Romanova
@@ -176,5 +173,19 @@
 
         </div><!-- end container-fluid -->
     <!--</div>-->
+
+    <!-- Modal HTML embedded directly into document -->
+    <form action="" class="login_form modal" id="login" style="display:none;">
+    <div style="margin-bottom: 25px" class="input-group">
+        <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
+        <input id="login-username" type="text" class="form-control" name="username" value="" placeholder="username or email">
+    </div>
+
+    <div style="margin-bottom: 25px; text-align: center" class="input-group">
+        <span class="input-group-addon"><i class="glyphicon glyphicon-lock"></i></span>
+        <input id="login-password" type="password" class="form-control" name="password" placeholder="password">
+    </div>
+        <button id="submit" type="submit" value="Login" class="btn btn-default btn-success">Submit</button>
+    </form>
 </body>
 </html>
