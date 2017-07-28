@@ -28,8 +28,11 @@
     <!-- drop-down cart content style -->
     <link rel="stylesheet" href="css/drop-down-cart.css" type="text/css" />
 
-    <!-- drop-down cart content style -->
+    <!-- common content style -->
     <link rel="stylesheet" href="css/styles.css" type="text/css" />
+
+    <!-- drop-down cart content style -->
+    <link rel="stylesheet" href="css/blank.css" type="text/css" />
 
     <script src="js/myscripts.js"></script>
 
@@ -92,11 +95,20 @@
                         <li class="dropdown">
                             <a class="dropdown-toggle" data-toggle="dropdown" href="#">Cart<span class="caret"></span></a>
                             <ul class="dropdown-menu">
-                            <span>
-
-                            </span>
+                                <li id="cart-table">
+                                    <!-- cart content is rendered by script -->
+                                </li>
                                 <li class="divider"></li>
-                                <li class="total">Total&nbsp;&nbsp;$<span id="total">0.00</span></li>
+                                <li class="total">Your cart is empty</li>
+                                <li class="divider"></li>
+                                <li class="view-cart">
+                                    <div class="btn-group">
+                                        <div class="col-sm-12">
+                                            <button type="button" id="edit-cart" class="btn btn-default btn-primary" data-toggle="tooltip" title="You'll be able to review your purchase prior to completing the transaction">Checkout</button>
+                                            <button type="button" id="clear-cart" class="btn btn-default">Clear</button>
+                                        </div>
+                                    </div>
+                                </li>
                             </ul>
                         </li>
                     </ul>
@@ -109,7 +121,8 @@
     <div class="row">
         <div class="container content">
             <div class="row myRow">
-                <h1>Hello</h1>
+                <h1>Test</h1>
+
             </div>
         </div><!-- End container-fluid -->
     </div><!-- end PAGE CONTENT row -->

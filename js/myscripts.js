@@ -1,9 +1,12 @@
-$(document).ready(function(){
+$(document).ready(function() {
+
+    $('[data-toggle="tooltip"]').tooltip();
+
 
     // flip coin on 'click'
     $(".card-grid").flip({
         trigger: 'click',
-        speed: 500
+        speed: 700
     });
 
 
@@ -60,10 +63,12 @@ $(document).ready(function(){
 
     $('#clear-cart').click(function() {
         localStorage.clear();
+        $("li#cart-table").html("");
+        $(".total").text('Your cart is empty');
     });
 
 
-    $('#view').click(function() {
+    $('#edit-cart').click(function() {
         var cartString = localStorage.getItem( "cart" ); // get cart JSON object from local storage
         alert("Cart string in local storage: " + cartString);
 
@@ -141,23 +146,24 @@ $(document).ready(function(){
         // for each coin in the array render an item in shopping cart
         for (var i = 0; i < cart.length; i++) {
             var coin = cart[i];
-            $("#cart-content").append("<li><table><tr>" +
-                "<td><img class='coin' src='" + coin.Img + "'></td>" +
-                "<td>" + coin.Name + "</td>" +
-                "<td id='"+coin.id+"'>" + coin.Quantity + "x</td>" +
-                "<td>$" + numberWithCommas(coin.Price) + "</td>" +
-                "</tr></table></li>");
+            $('li#cart-table').append('<div class="container-fluid"><table class="cart-row"><tr>' +
+                '<td class="coinImg"><img class="img-responsive" src="'+ coin.Img +'"></td>' +
+                '<td class="coinName">'+ coin.Name +'</td>' +
+                '<td id="'+ coin.id +'" class="coinQty" nowrap>'+ coin.Quantity +'</td>' +
+                '<td class="coinPrice" nowrap>$'+ numberWithCommas(coin.Price) +'</td>' +
+            '</tr> </table></div>');
         }
+
 
         // total amount in the cart
         theTotal = cartTotal();
-        $("#total").text(numberWithCommas(theTotal.toFixed(2)));
+        $('.total').html('Total&nbsp;&nbsp;$<span id="total">'+numberWithCommas(theTotal.toFixed(2))+'</span>');
     }
 
 
     // each time on hover refresh cart from local storage
     $('.dropdown').hover(function() {
-        $("#cart-content").html("");
+        $("li#cart-table").html("");
         renderCart();
     });
 

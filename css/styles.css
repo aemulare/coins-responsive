@@ -173,6 +173,7 @@ article {
     margin: 0.5em 0;
 }
 
+
 .quote {
     color: black;
     font-family: 'Bad Script', cursive;
@@ -187,9 +188,6 @@ article {
 }
 
 
-
-
-
 /* login modal */
 #login-username,
 #login-password {
@@ -197,10 +195,4 @@ article {
 }
 
 
-a#view-cart {
-    color: white;
-    display: block;
-    margin: auto auto;
-    text-align: center;
-    width: 150px;
-}
+
