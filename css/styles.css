@@ -96,7 +96,8 @@ header {
         height:170px;
     }
     .brand a {
-        font-size: 1.8em;
+        font-size: 1.6em;
+        word-spacing: 3px;
     }
 }
 
@@ -107,6 +108,7 @@ header {
     }
     .brand a {
         font-size: 2.3em;
+        word-spacing: 3px;
     }
 }
 

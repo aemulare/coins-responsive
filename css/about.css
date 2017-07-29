@@ -11,9 +11,10 @@
     color: #7b0c00;
     font-family: 'Yantramanav', sans-serif;
     font-size: 2em;
-    font-weight: bold;
+    font-weight: bolder;
     margin: 0.5em 0;
 }
+
 
 
 .about p:first-letter {
@@ -42,3 +43,18 @@ article {
 }
 
 
+/* mobile phone */
+@media only screen and (min-width: 0) and (max-width: 480px) {
+    .about > img {
+        height: 150px;
+        width: auto;
+    }
+}
+
+/* tablet portrait */
+@media only screen and (min-width: 481px) and (max-width: 768px) {
+    .about img {
+        height: 200px;
+        width: auto;
+    }
+}

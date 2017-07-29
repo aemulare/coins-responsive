@@ -17,6 +17,8 @@ iframe, .panel {
 
 
 #title {
+    font-family: 'Yantramanav', sans-serif;
+    font-size: 2em;
     font-weight: bolder;
     color: #7b0c00;
 }
@@ -41,4 +43,13 @@ textarea {
 
 .input-group {
     z-index: 0;
+}
+
+
+/* mobile phone */
+@media only screen and (min-width: 0) and (max-width: 480px) {
+    div#contact-info p > span{
+        font-size: 0.9em;
+    }
+
 }
