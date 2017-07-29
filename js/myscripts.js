@@ -1,3 +1,4 @@
+
 $(document).ready(function() {
 
     $('[data-toggle="tooltip"]').tooltip();
@@ -8,6 +9,21 @@ $(document).ready(function() {
         trigger: 'click',
         speed: 700
     });
+
+
+    function setNavigation() {
+        var path = location.pathname.split("/")[2];
+
+        $("ul.nav.navbar-nav.site-links li a").each(function () {
+            var href = $(this).attr('href');
+
+            if (path === href) {
+                $(this).closest('li').addClass('active');
+            }
+        });
+    }
+
+    setNavigation();
 
 
     // format coin price with comma
