@@ -3,6 +3,7 @@
     width: 15%;
 }
 
+
 .coinName {
     /*background-color: greenyellow;*/
     text-align: left;
@@ -15,6 +16,7 @@
     text-align: right;
     width: 10%;
 }
+
 
 .coinPrice {
     /*background-color: deepskyblue;*/
@@ -36,8 +38,6 @@ table {
     /*min-width: 430px;*/
     /*display: inline-flex;*/
 }
-
-
 
 
 .total {
@@ -68,6 +68,7 @@ table {
 .dropdown:hover .dropdown-menu {
     display: block;
 }
+
 
 /* Changes the background color of the drop-down button when the drop-down content is shown */
 .dropdown:hover .dropbtn {
