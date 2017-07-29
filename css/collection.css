@@ -348,3 +348,37 @@ button:active {
     width: 150px;
     margin: 40px auto;
 }
+
+
+div.modal-header,
+div.modal-footer {
+    margin: 0;
+    padding: 0;
+}
+
+
+/* mobile phone */
+@media only screen and (min-width: 0) and (max-width: 480px) {
+    .modal-body img {
+        height: 100px;
+        width: auto;
+    }
+    .modal-header h5 {
+        font-size: 12px;
+    }
+    .modal-footer h4, h6 {
+        font-size: 12px;
+    }
+}
+
+
+/* mobile phone */
+@media only screen and (min-width: 480px) and (max-width: 667px) and (orientation: landscape) {
+    .modal-body img {
+        height: 100px;
+        width: auto;
+    }
+    .modal-footer h4, h6 {
+        font-size: 12px;
+    }
+}
