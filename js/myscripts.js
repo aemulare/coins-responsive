@@ -12,10 +12,17 @@ $(document).ready(function() {
 
 
     function setNavigation() {
-        var path = location.pathname.split("/")[2];
+        var path = location.pathname.match(/.*\/(.*\.html)/i)[1];
+        // path = path.replace(/\/$/, "");
+        // path = decodeURIComponent(path);
+
+        // path = str.match(/.*\/(.*\.html)/g);
 
         $("ul.nav.navbar-nav.site-links li a").each(function () {
             var href = $(this).attr('href');
+
+            // alert(path);
+            // alert(href);
 
             if (path === href) {
                 $(this).closest('li').addClass('active');
@@ -24,6 +31,7 @@ $(document).ready(function() {
     }
 
     setNavigation();
+
 
 
     // format coin price with comma
