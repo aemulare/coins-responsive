@@ -34,9 +34,6 @@ table td {
 
 table {
     table-layout: fixed;
-    /*margin: 10px;*/
-    /*min-width: 430px;*/
-    /*display: inline-flex;*/
 }
 
 
@@ -86,4 +83,33 @@ table {
 
 li#cart-table {
     min-width:430px;
+}
+
+
+/* mobile phone */
+@media only screen and (min-width: 0) and (max-width: 480px) {
+    .dropdown-menu .container-fluid {
+        width: 310px;
+    }
+    li#cart-table {
+        min-width: 300px;
+    }
+    table td {
+        padding: 2px 5px 2px 0;
+    }
+    .coinImg {
+        width: 12%;
+    }
+    .coinName {
+        width: 52%;
+    }
+
+    .coinQty {
+        width: 10%;
+    }
+    .coinPrice {
+        padding-left: 5px;
+        width: 26%;
+    }
+
 }

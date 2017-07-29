@@ -173,7 +173,7 @@ $(document).ready(function() {
             $('li#cart-table').append('<div class="container-fluid"><table class="cart-row"><tr>' +
                 '<td class="coinImg"><img class="img-responsive" src="'+ coin.Img +'"></td>' +
                 '<td class="coinName">'+ coin.Name +'</td>' +
-                '<td id="'+ coin.id +'" class="coinQty" nowrap>'+ coin.Quantity +' x</td>' +
+                '<td id="'+ coin.id +'" class="coinQty" nowrap>'+ coin.Quantity +'x</td>' +
                 '<td class="coinPrice" nowrap>$'+ numberWithCommas(coin.Price) +'</td>' +
             '</tr> </table></div>');
         }
