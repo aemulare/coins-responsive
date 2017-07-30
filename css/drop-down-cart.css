@@ -89,13 +89,13 @@ li#cart-table {
 /* mobile phone */
 @media only screen and (min-width: 0) and (max-width: 480px) {
     .dropdown-menu .container-fluid {
-        width: 310px;
+        width: 100%;
     }
     li#cart-table {
-        min-width: 300px;
+        min-width: 100%;
     }
     table td {
-        padding: 2px 5px 2px 0;
+        padding: 5px;
     }
     .coinImg {
         width: 12%;
@@ -112,4 +112,15 @@ li#cart-table {
         width: 26%;
     }
 
+}
+
+
+/* mobile phone */
+@media only screen and (min-width: 480px) and (max-width: 667px) and (orientation: landscape) {
+    .dropdown-menu .container-fluid {
+        width:100%;
+    }
+    li#cart-table {
+        min-width: 100%;
+    }
 }

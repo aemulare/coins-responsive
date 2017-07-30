@@ -93,8 +93,9 @@ $(document).ready(function() {
 
 
     $('#edit-cart').click(function() {
-        var cartString = localStorage.getItem( "cart" ); // get cart JSON object from local storage
-        alert("Cart string in local storage: " + cartString);
+        // var cartString = localStorage.getItem( "cart" ); // get cart JSON object from local storage
+        // alert("Cart string in local storage: " + cartString);
+        alert("Sorry! This feature is not yet implemented. Try again later.")
 
     });
 
