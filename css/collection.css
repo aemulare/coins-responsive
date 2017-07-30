@@ -27,7 +27,8 @@
     height: 100%;
     background-color: rgba(255, 249, 241, 0.74);
     alignment: center;
-    /*padding: 0 3%;*/
+    padding: 2% 2% 3% 2%;
+    /*background-color: aqua;*/
 }
 
 
@@ -199,24 +200,18 @@
     background-color: white;
     /*border: 1px solid green;*/
     height: 5em;
-    padding: 0 0.3em;
+    padding: 0.3em;
 }
 
 
 /* coin name text */
 .card-header span {
-    font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-family: 'Yantramanav', sans-serif;
     font-size: 1em;
     /*font-weight: bold;*/
 }
 
 
-/* coin name text */
-div.card-header {
-    font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
-    font-size: 0.9em;
-    /*font-weight: bold;*/
-}
 
 
 /* coin image container */
@@ -224,7 +219,6 @@ div.card-header {
     perspective: 200px;
     position: relative;
     transform-style: preserve-3d;
-    padding: 5% 0;
     vertical-align: middle;
 }
 
@@ -259,7 +253,7 @@ div.card-header {
 /* coin price container */
 .card-footer {
     background-color: white;
-    padding: 2% 0;
+    padding: 12px 0;
     height: auto;
     /*border: 1px solid red;*/
 }
@@ -279,10 +273,10 @@ div.card-header {
 
 /* coin price buttons */
 .card button {
-    font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
-    font-size: 0.9em;
+    font-family: 'Yantramanav', sans-serif;
+    font-size: 0.8em;
     /*font-weight: bolder;*/
-    width: 10em;
+    width: 12em;
     border: none;
     color: #7b0c00;
     background-color: #ffe0b7;
